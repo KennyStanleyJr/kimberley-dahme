@@ -54,7 +54,7 @@ a:hover {
 }
 
 .image {
-    width: 200px;
+    width: 500px;
     /* height: 150px; */
     /* border-radius: 1rem; */
     overflow: hidden;
@@ -67,9 +67,14 @@ a:hover {
     object-fit: contain;
 }
 
+.main-title {
+    font-weight: 600;
+    font-size: 4rem;
+}
+
 .main-subtitle {
     font-weight: 100;
-    font-size: 0.75rem;
+    font-size: 2rem;
     /* margin: 1rem; */
 }
 
@@ -80,33 +85,27 @@ a:hover {
     /* margin: 1rem; */
 }
 
-#facebook-link img, #instagram-link img, #youtube-link img {
-    height: 1.5rem;
+#facebook-link img, #instagram-link img, #youtube-link img, #tiktok-link img {
+    height: 4rem;
+    padding: 1rem;
 }
 
-#tiktok-link img {
-    height: 1.85rem;
-}
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
     .wrapper {
         flex-direction: column;
     }
     .image {
-        height: 150px;
+        width: 300px;
     }
     .main-title {
         margin-top: 0;
-        font-size: 1rem;
+        font-size: 3rem;
     }
     .main-subtitle {
         margin-top: 0;
-        font-size: 0.5rem;
+        font-size: 1.5rem;
     }
-    #facebook-link img, #instagram-link img, #youtube-link img {
-        height: 1.25rem;
-    }
-    #tiktok-link img {
-        height: 1.5rem;
+    #facebook-link img, #instagram-link img, #youtube-link img, #tiktok-link img {
+        height: 4rem;
     }
 }
