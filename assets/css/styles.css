@@ -61,7 +61,7 @@ a:hover {
     margin: 2rem;
 }
 
-.image img {
+.main-image-container img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -69,13 +69,15 @@ a:hover {
 
 .main-title {
     font-weight: 600;
-    font-size: 4rem;
+    font-size: 3.5rem;
+    padding: 0.5rem;
+    margin: 1rem;
 }
 
 .main-subtitle {
     font-weight: 100;
-    font-size: 2rem;
-    /* margin: 1rem; */
+    font-size: 1.5rem;
+    margin: 1rem;
 }
 
 .links {
@@ -86,19 +88,19 @@ a:hover {
 }
 
 #facebook-link img, #instagram-link img, #youtube-link img, #tiktok-link img {
-    height: 4rem;
-    padding: 1rem;
+    height: 3rem;
+    padding: 0.5rem;
 }
 
 @media screen and (max-width: 1000px) {
     .wrapper {
         flex-direction: column;
     }
-    .image {
-        width: 300px;
+    .main-image-container {
+        height: 300px;
     }
     .main-title {
-        margin-top: 0;
+        margin-top: 1rem;
         font-size: 3rem;
     }
     .main-subtitle {
@@ -106,6 +108,25 @@ a:hover {
         font-size: 1.5rem;
     }
     #facebook-link img, #instagram-link img, #youtube-link img, #tiktok-link img {
-        height: 4rem;
+        height: 2.5rem;
+        padding: 0.25rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .main-image-container {
+        height: 200px;
+    }
+    .main-title {
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+    }
+    .main-subtitle {
+        margin-top: 0;
+        font-size: 1rem;
+    }
+    #facebook-link img, #instagram-link img, #youtube-link img, #tiktok-link img {
+        height: 1.5rem;
+        padding: 0.1rem;
     }
 }
